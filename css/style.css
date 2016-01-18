@@ -27,142 +27,129 @@ html {
 }
 
 
-html, body {
+html,body {
   height:100%;
-  position: flex;
+  width: 100%;
   background-color: rgba(50,50,50, .3);
   font-family: 'Montserrat';
 }
 
-#facebook-icon {
-  position: absolute;
-  width:32px;
-  bottom: 15%;
-  left: calc((100%/2) - 40px);
-  z-index: 10;
-}
-
-#instagram-icon {
-  position: absolute;
-  width:32px;
-  bottom: 15%;
-  right: calc((100%/2) - 40px);
-  z-index: 10;
-}
-
-.hide {
-  display: none;
-  visibility: hidden;
-}
-
-.form-control {
-  display: inline-block;
-}
-
-form.wufoo {
-  position: absolute;
-  bottom: 10px;
-  left: calc((100% - 260px)/2);
-}
-
-input {
-  color: #000;
-}
-
-#Field2 {
-  display:inline-block;
-  padding: 6px 10px;
-  height: 34px;
-  width: 207px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-#foli1 {
-  display: inline-block;
-}
-
-#saveForm {
-  display:inline-block;
-  padding: 6px 10px;
-  height: 34px;
-  background-color: #e5e5e5;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-#submit-button {
-  display: inline-block;
-}
-
-.subscribe-desc {
-  color: #b2b2b2;
-}
-
 #body-main {
   display:none;
+  height: 100%;
+  width: 100%;
   color: #fff;
-  background-color: #000;
   z-index: 1;
+}
+
+#logo-main {
+  position: absolute;
+  width: 125vw;
+  top: -25vw;
+  left: -13vw;
+  max-width: 960px;
+  z-index: 2;
 }
 
 #pouring-soon {
   position:absolute;
   font-family: 'Montserrat';
   font-size: 18px;
-  bottom: 25%;
-  left: calc((100% - 127px)/2);
+  margin: 0;
+  top: calc((125vw/16) + (125vw * .7) - 25vw);
+  left: calc((100% - 150px)/2);
   z-index: 2;
 }
 
-
-#logo-main {
+#instructions {
   position: absolute;
-  top: -50px;
-  left: 0;
+  text-align: justify;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);
+  left: calc((100% - 288px)/2);
+}
+
+/*Email Subscription*/
+form.wufoo {
+  position: absolute;
+  color: #231D1E;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 50px);
+  left: calc((100% - 268px)/2);
   z-index: 2;
 }
+#foli1 {
+  display: inline-block;
+}
+#Field2 {
+  color: #231D1E;
+  background-color: #fff;
+  padding: 8px 14px;
+  border: 1px solid #000;
+}
+#submit-button {
+  display: inline-block;
+  background-color: #fff;
+}
+#saveForm {
+  background-color: #fff;
+  padding: 8px 14px;
+  border: 1px solid #000;
+}
+/*Email Subscription End*/
+
+#social-media {
+  position: absolute;
+  display: block;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 100px);
+  left: calc((100% - 68px)/2);
+  z-index: 10;
+}
+
+hr {
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  border-color: #DE890A;
+  border-width: .3em;
+  border-radius: 3px;
+  width: 22vw;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);
+  left: calc((100vw - 22vw)/2);
+}
 
 
-@media (orientation: portrait) and (min-width: 380px) {
-  #pouring-soon {
-    font-size: 24px;
-    left: calc((100% - 170px)/2)
+
+@media (min-width: 768px) {
+  #logo-main {
+    top: -192px;
+    left: calc((98% - 960px)/2);
   }
 
-  #Field2 {
-    width: 247px;
+  #pouring-soon {
+    top: 540px;
+  }
+
+  #instructions {
+    top: 585px;
   }
 
   form.wufoo {
-    left: calc((100% - 300px)/2);
+    top: 645px;
   }
 
-}
-
-@media (orientation: portrait) and (min-width: 415px) {
-  #pouring-soon {
-    font-size: 28px;
-    left: calc((100% - 200px)/2)
-  }
-}
-
-@media (orientation: portrait) and (min-width: 600px) {
-  #Field2 {
-    width: 332px;
+  #social-media {
+    top: 705px;
   }
 
-  form.wufoo {
-    left: calc((100% - 385px)/2);
-  }
-
-  #pouring-soon {
-    font-size: 32px;
-    left: calc((100% - 225px)/2)
+  hr {
+    width: 125px;
+    border-width: .5em;
+    top: 755px;
+    left: calc((100vw - 125px)/2);
   }
 }
 
-@media (orientation: portrait) and (min-width: 960px) {
+
+/*@media (orientation: portrait) and (min-width: 960px) {
   #logo-main {
     top: -140px;
     left: calc(((100% - 960px)/2) - 9px);
@@ -177,9 +164,9 @@ input {
   #logo-main {
     left: calc((100% - 90vh)/2);
   }
-}
+}*/
 
-@media (orientation: landscape) and (min-width: 600px) {
+/*@media (orientation: landscape) and (min-width: 600px) {
   #pouring-soon {
     font-size: 24px;
     left: calc((100% - 170px)/2)
@@ -192,4 +179,116 @@ input {
   form.wufoo {
     left: calc((100% - 385px)/2);
   }
-}
+}*/
+
+
+
+
+
+/*#facebook-icon {
+  position: absolute;
+  width:32px;
+  bottom: 15%;
+  left: calc((100%/2) - 40px);
+  z-index: 10;
+}*/
+
+/*#instagram-icon {
+  position: absolute;
+  width:32px;
+  bottom: 15%;
+  right: calc((100%/2) - 40px);
+  z-index: 10;
+}*/
+
+/*.hide {
+  display: none;
+  visibility: hidden;
+}*/
+
+/*.form-control {
+  display: inline-block;
+}*/
+
+/*form.wufoo {
+  position: absolute;
+  bottom: 10px;
+  left: calc((100% - 260px)/2);
+}*/
+
+/*input {
+  color: #000;
+}*/
+
+/*#Field2 {
+  display:inline-block;
+  padding: 6px 10px;
+  height: 34px;
+  width: 207px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}*/
+
+/*#foli1 {
+  display: inline-block;
+}*/
+
+/*#saveForm {
+  display:inline-block;
+  padding: 6px 10px;
+  height: 34px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}*/
+
+/*#submit-button {
+  display: inline-block;
+}*/
+
+/*.subscribe-desc {
+  color: #b2b2b2;
+}*/
+
+
+
+
+
+
+/*@media (orientation: portrait) and (min-width: 380px) {
+  #pouring-soon {
+    font-size: 24px;
+    left: calc((100% - 170px)/2)
+  }
+
+  #Field2 {
+    width: 247px;
+  }
+
+  form.wufoo {
+    left: calc((100% - 300px)/2);
+  }
+
+}*/
+
+/*@media (orientation: portrait) and (min-width: 415px) {
+  #pouring-soon {
+    font-size: 28px;
+    left: calc((100% - 200px)/2)
+  }
+}*/
+
+/*@media (orientation: portrait) and (min-width: 600px) {
+  #Field2 {
+    width: 332px;
+  }
+
+  form.wufoo {
+    left: calc((100% - 385px)/2);
+  }
+
+  #pouring-soon {
+    font-size: 32px;
+    left: calc((100% - 225px)/2)
+  }
+}*/
