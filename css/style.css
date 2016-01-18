@@ -123,7 +123,7 @@ hr {
 @media (min-width: 768px) {
   #logo-main {
     top: -192px;
-    left: calc((98% - 960px)/2);
+    left: calc((100% - 960px)/2);
   }
 
   #pouring-soon {
