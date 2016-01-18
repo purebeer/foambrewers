@@ -111,9 +111,9 @@ hr {
   border-color: #DE890A;
   border-width: .3em;
   border-radius: 3px;
-  width: 25vw;
+  width: 22vw;
   top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);
-  left: calc((100vw - 25vw)/2);
+  left: calc((100vw - 22vw)/2);
 }
 
 
@@ -141,7 +141,10 @@ hr {
   }
 
   hr {
+    width: 125px;
+    border-width: .5em;
     top: 755px;
+    left: calc((100vw - 125px)/2);
   }
 }
 
