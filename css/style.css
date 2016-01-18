@@ -29,6 +29,7 @@ html {
 
 html,body {
   height:100%;
+  position:flex;
   width: 100%;
   background-color: rgba(50,50,50, .3);
   font-family: 'Montserrat';
