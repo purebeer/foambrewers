@@ -68,6 +68,34 @@ html,body {
   left: calc((100% - 288px)/2);
 }
 
+form.wufoo {
+  position: absolute;
+  color: #231D1E;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 50px);
+  left: calc((100% - 268px)/2);
+  z-index: 2;
+}
+
+#foli1 {
+  display: inline-block;
+}
+#Field2 {
+  color: #231D1E;
+  background-color: #fff;
+  padding: 8px 14px;
+  border: 1px solid #000;
+}
+
+#submit-button {
+  display: inline-block;
+  background-color: #fff;
+}
+#saveForm {
+  background-color: #fff;
+  padding: 8px 14px;
+  border: 1px solid #000;
+}
+
 @media (min-width: 768px) {
   #logo-main {
     top: -192px;
