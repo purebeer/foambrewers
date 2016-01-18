@@ -1,4 +1,6 @@
 html {
+  height: 100vh;
+  width: 100vw;
   background: url(bricks737x1104.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,7 +29,7 @@ html {
 }
 
 
-html,body {
+body {
   height:100vh;
   position:flex;
   width: 100vw;
@@ -54,7 +56,6 @@ html,body {
 
 #pouring-soon {
   position:absolute;
-  font-family: 'Montserrat';
   font-size: 18px;
   margin: 0;
   top: calc((125vw/16) + (125vw * .7) - 25vw);
@@ -64,9 +65,11 @@ html,body {
 
 #instructions {
   position: absolute;
+  font-size: 14px;
+  width: 295px;
   text-align: justify;
   top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);
-  left: calc((100vw - 288px)/2);
+  left: calc((100vw - 295px)/2);
 }
 
 /*Email Subscription*/
@@ -82,6 +85,7 @@ form.wufoo {
 }
 #Field2 {
   color: #231D1E;
+  width: 199px;
   background-color: #fff;
   padding: 8px 14px;
   border: 1px solid #000;
@@ -93,6 +97,7 @@ form.wufoo {
 }
 #saveForm {
   background-color: #fff;
+  width: 65.5px;
   padding: 8px 14px;
   border-radius: 0px;
   border: 1px solid #000;
