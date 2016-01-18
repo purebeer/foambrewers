@@ -68,6 +68,7 @@ html,body {
   left: calc((100% - 288px)/2);
 }
 
+/*Email Subscription*/
 form.wufoo {
   position: absolute;
   color: #231D1E;
@@ -75,7 +76,6 @@ form.wufoo {
   left: calc((100% - 268px)/2);
   z-index: 2;
 }
-
 #foli1 {
   display: inline-block;
 }
@@ -85,7 +85,6 @@ form.wufoo {
   padding: 8px 14px;
   border: 1px solid #000;
 }
-
 #submit-button {
   display: inline-block;
   background-color: #fff;
@@ -95,6 +94,9 @@ form.wufoo {
   padding: 8px 14px;
   border: 1px solid #000;
 }
+/*Email Subscription End*/
+
+
 
 @media (min-width: 768px) {
   #logo-main {
@@ -108,6 +110,10 @@ form.wufoo {
 
   #instructions {
     top: 585px;
+  }
+
+  form.wufoo {
+    top: 645px;
   }
 }
 
