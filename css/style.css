@@ -84,6 +84,7 @@ form.wufoo {
   background-color: #fff;
   padding: 8px 14px;
   border: 1px solid #000;
+  border-radius: 0px;
 }
 #submit-button {
   display: inline-block;
@@ -92,6 +93,7 @@ form.wufoo {
 #saveForm {
   background-color: #fff;
   padding: 8px 14px;
+  border-radius: 0px;
   border: 1px solid #000;
 }
 /*Email Subscription End*/
