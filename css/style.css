@@ -1,12 +1,22 @@
 html {
-  background: url(bricks800.jpg) no-repeat center center fixed;
+  background: url(bricks737x1104.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-@media (min-width: 800px) {
+@media (orientation: landscape) and (min-width: 800px) {
+  html {
+    background: url(bricks.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 737px) {
   html {
     background: url(bricks.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
