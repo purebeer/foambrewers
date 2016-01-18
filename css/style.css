@@ -58,7 +58,7 @@ html,body {
   font-size: 18px;
   margin: 0;
   top: calc((125vw/16) + (125vw * .7) - 25vw);
-  left: calc((100% - 150px)/2);
+  left: calc((100vw - 150px)/2);
   z-index: 2;
 }
 
@@ -66,7 +66,7 @@ html,body {
   position: absolute;
   text-align: justify;
   top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);
-  left: calc((100% - 288px)/2);
+  left: calc((100vw - 288px)/2);
 }
 
 /*Email Subscription*/
@@ -74,7 +74,7 @@ form.wufoo {
   position: absolute;
   color: #231D1E;
   top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 50px);
-  left: calc((100% - 268px)/2);
+  left: calc((100vw - 268px)/2);
   z-index: 2;
 }
 #foli1 {
@@ -103,7 +103,7 @@ form.wufoo {
   position: absolute;
   display: block;
   top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 100px);
-  left: calc((100% - 68px)/2);
+  left: calc((100vw - 68px)/2);
   z-index: 10;
 }
 
@@ -124,7 +124,7 @@ hr {
 @media (min-width: 768px) {
   #logo-main {
     top: -192px;
-    left: calc((100% - 960px)/2);
+    left: calc((100vw - 960px)/2);
   }
 
   #pouring-soon {
