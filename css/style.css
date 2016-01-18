@@ -96,12 +96,32 @@ form.wufoo {
 }
 /*Email Subscription End*/
 
+#social-media {
+  position: absolute;
+  display: block;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 100px);
+  left: calc((100% - 68px)/2);
+  z-index: 10;
+}
+
+hr {
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  border-color: #DE890A;
+  border-width: .3em;
+  border-radius: 3px;
+  width: 25vw;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);
+  left: calc((100vw - 25vw)/2);
+}
+
 
 
 @media (min-width: 768px) {
   #logo-main {
     top: -192px;
-    left: calc((100% - 960px)/2);
+    left: calc((98% - 960px)/2);
   }
 
   #pouring-soon {
@@ -114,6 +134,14 @@ form.wufoo {
 
   form.wufoo {
     top: 645px;
+  }
+
+  #social-media {
+    top: 705px;
+  }
+
+  hr {
+    top: 755px;
   }
 }
 
