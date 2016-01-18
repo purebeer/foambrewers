@@ -61,6 +61,13 @@ html,body {
   z-index: 2;
 }
 
+#instructions {
+  position: absolute;
+  text-align: justify;
+  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);
+  left: calc((100% - 288px)/2);
+}
+
 @media (min-width: 768px) {
   #logo-main {
     top: -192px;
@@ -69,6 +76,10 @@ html,body {
 
   #pouring-soon {
     top: 540px;
+  }
+
+  #instructions {
+    top: 585px;
   }
 }
 
