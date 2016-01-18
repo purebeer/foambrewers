@@ -29,6 +29,7 @@ html {
 
 html,body {
   height:100%;
+  position:flex;
   width: 100%;
   background-color: rgba(50,50,50, .3);
   font-family: 'Montserrat';
@@ -123,7 +124,7 @@ hr {
 @media (min-width: 768px) {
   #logo-main {
     top: -192px;
-    left: calc((98% - 960px)/2);
+    left: calc((100% - 960px)/2);
   }
 
   #pouring-soon {
