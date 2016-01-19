@@ -1,6 +1,6 @@
 html {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background: url(bricks.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -30,57 +30,61 @@ html {
 
 
 body {
-  height:100vh;
-  position: absolute;
+  height:100%;
+  /*position: absolute;*/
   left: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background-color: rgba(50,50,50, .3);
   font-family: 'Montserrat';
 }
 
 #body-main {
-  display:none;
-  height: 100vh;
-  width: 100vw;
+  /*display:none;*/
+  height: 100%;
+  width: 100%;
   color: #fff;
   z-index: 1;
 }
 
 #logo-main {
-  position: absolute;
-  width: 125vw;
-  top: -25vw;
-  left: -13vw;
-  max-width: 960px;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-width: 768px;
   z-index: 2;
 }
 
 #pouring-soon {
-  position:absolute;
+  position:relative;
   font-size: 18px;
   margin: 0;
-  top: calc((125vw/16) + (125vw * .7) - 25vw);
-  left: calc((100vw - 150px)/2);
+  text-align: center;
+  top: -90px;
+  /*top: calc((125vw/16) + (125vw * .7) - 25vw);*/
+  /*left: calc((100vw - 150px)/2);*/
   z-index: 2;
 }
 
 #instructions {
-  position: absolute;
+  position: relative;
   font-size: 14px;
-  width: 295px;
-  text-align: justify;
-  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);
-  left: calc((100vw - 295px)/2);
+  /*width: 295px;*/
+  text-align: center;
+  top: -70px;
+  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);*/
+  /*left: calc((100% - 295px)/2);*/
 }
 
 /*Email Subscription*/
 form.wufoo {
-  position: absolute;
+  position: relative;
   color: #231D1E;
-  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 50px);
-  left: calc((100vw - 268px)/2);
+  top: -70px;
+  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 50px);*/
+  left: calc((100% - 268px)/2);
   z-index: 2;
 }
 #foli1 {
@@ -108,58 +112,60 @@ form.wufoo {
 /*Email Subscription End*/
 
 #social-media {
-  position: absolute;
+  position: relative;
   display: block;
-  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 100px);
-  left: calc((100vw - 68px)/2);
+  top: -55px;
+  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 100px);*/
+  left: calc((100% - 68px)/2);
   z-index: 10;
 }
 
 hr {
-  position:absolute;
+  position:relative;
   padding: 0;
   margin: 0;
   border-color: #DE890A;
   border-width: .3em;
   border-radius: 3px;
   width: 22vw;
-  top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);
-  left: calc((100vw - 22vw)/2);
+  top: -45px;
+  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);*/
+  left: calc((100% - 22vw)/2);
 }
 
-.hide {
+/*.hide {
   display: none;
   visibility: hidden;
-}
+}*/
 
 
 
 @media (min-width: 768px) {
   #logo-main {
-    top: -192px;
-    left: calc((100vw - 960px)/2);
+    /*top: -192px;*/
+    left: calc((100% - 768px)/2);
   }
 
   #pouring-soon {
-    top: 540px;
+    top: -200px;
   }
 
   #instructions {
-    top: 585px;
+    top: -150px;
   }
 
   form.wufoo {
-    top: 645px;
+    top: -150px;
   }
 
   #social-media {
-    top: 705px;
+    top: -125px;
   }
 
   hr {
     width: 125px;
     border-width: .5em;
-    top: 755px;
-    left: calc((100vw - 125px)/2);
+    top: -100px;
+    left: calc((100% - 125px)/2);
   }
 }
