@@ -1,0 +1,44 @@
+@media (orientation: landscape) {
+  #logo-main {
+    width: 225px;
+    left: calc((100% - 225px)/2);
+  }
+
+  #pouring-soon {
+    font-size: 15px;
+    top: 53%;
+    left: calc((100% - 125px)/2);
+  }
+
+  #instructions {
+    font-size: 12px;
+    top: 62%;
+    left: calc((100% - 245px)/2);
+  }
+
+  form.wufoo {
+    top: 70%;
+  }
+
+  #social-media {
+    top: 85%;
+  }
+
+  hr {
+    top: 97%;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 375px) {
+  #logo-main {
+    width: 275px;
+    left: calc((100% - 275px)/2);
+  }
+}
+
+@media (orientation: landscape) and (min-height: 414px) {
+  #logo-main {
+    width: 300px;
+    left: calc((100% - 300px)/2);
+  }
+}

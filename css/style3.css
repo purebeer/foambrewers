@@ -16,7 +16,6 @@ html {
   }
 }
 
-
 html, body {
   height:100%;
   background-color: rgba(50,50,50, .3);
@@ -33,7 +32,7 @@ html, body {
   position: absolute;
   width: 320px;
   top: 0;
-  left: 0;
+  left: calc((100% - 320px)/2);
   max-width: 768px;
   z-index: 2;
 }
@@ -108,44 +107,88 @@ hr {
   left: calc((100% - 22%)/2);
 }
 
-/*.hide {
-  display: none;
-  visibility: hidden;
-}*/
+@media (orientation: portrait) and (max-height: 450px) {
+  #pouring-soon {
+    top: 57%;
+  }
 
-@media (min-width: 320px) {
-  #logo-main {
-    left: calc((100% - 320px)/2);
+  #instructions {
+    top: 65%;
+  }
+
+  form.wufoo {
+    top: 72%;
+  }
+
+  #social-media {
+    top: 85%;
+  }
+
+  hr {
+    top: 95%;
   }
 }
 
 
-@media (min-width: 768px) {
+@media (orientation: portrait) and (min-height: 550px) {
+  #pouring-soon {
+    top: 45%;
+  }
+
+  #Field2 {
+    padding: 8px 14px;
+  }
+
+  #saveForm {
+    padding: 8px 14px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
   #logo-main {
-    /*top: -192px;*/
+    width: 400px;
+    left: calc((100% - 400px)/2);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 600px) {
+  #logo-main {
+    width: 600px;
+    left: calc((100% - 600px)/2);
+  }
+
+  #pouring-soon {
+    top: 48%;
+  }
+}
+
+
+@media (orientation: portrait) and (min-width: 768px) {
+  #logo-main {
+    width: 768px;
     left: calc((100% - 768px)/2);
   }
 
   #pouring-soon {
-    /*top: -200px;*/
+    top: 57%;
   }
 
   #instructions {
-    /*top: -150px;*/
+    top: 62%;
   }
 
   form.wufoo {
-    /*top: -150px;*/
+    top: 66%;
   }
 
   #social-media {
-    /*top: -125px;*/
+    top: 74%;
   }
 
   hr {
     width: 125px;
     border-width: .5em;
-    /*top: -100px;*/
+    top: 80%;
     left: calc((100% - 125px)/2);
   }
 }
