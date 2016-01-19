@@ -26,6 +26,9 @@
 
   hr {
     top: 97%;
+    border-width: .25em;
+    width: 10%;
+    left: calc((100% - 10%)/2);
   }
 }
 
@@ -40,5 +43,89 @@
   #logo-main {
     width: 300px;
     left: calc((100% - 300px)/2);
+  }
+}
+
+@media (orientation: landscape) and (min-height: 500px) {
+  #logo-main {
+    width: 375px;
+    left: calc((100% - 375px)/2);
+  }
+
+  #pouring-soon {
+    font-size: 18px;
+    top: 54%;
+    left: calc((100% - 150px)/2);
+  }
+
+  #instructions {
+    font-size: 14px;
+    top: 64%;
+    left: calc((100% - 285px)/2);
+  }
+}
+
+@media (orientation: landscape) and (min-height: 600px) {
+  #logo-main {
+    width: 450px;
+    left: calc((100% - 450px)/2);
+  }
+
+  hr {
+    border-width: .35em;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 700px) {
+  #logo-main {
+    width: 525px;
+    left: calc((100% - 525px)/2);
+  }
+
+  hr {
+    border-width: .4em;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 768px) {
+  #logo-main {
+    width: 600px;
+    left: calc((100% - 600px)/2);
+  }
+
+  #pouring-soon {
+    top: 57%;
+  }
+
+  #instructions {
+    top: 66%;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 900px) {
+  #logo-main {
+    width: 768px;
+    left: calc((100% - 768px)/2);
+  }
+
+  #pouring-soon {
+    top: 62%;
+  }
+
+  #instructions {
+    top: 72%;
+  }
+
+  form.wufoo {
+    top: 76%;
+  }
+
+  #social-media {
+    top: 83%;
+  }
+
+  hr {
+    border-width: .5em;
+    top: 90%;
   }
 }
