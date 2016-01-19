@@ -1,6 +1,4 @@
 html {
-  /*height: 100%;*/
-  /*width: 100%;*/
   background: url(bricks.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,7 +6,7 @@ html {
   background-size: cover;
 }
 
-/*@media (orientation: landscape) and (min-width: 800px) {
+@media (min-width: 800px) {
   html {
     background: url(bricks.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -18,39 +16,22 @@ html {
   }
 }
 
-@media (orientation: portrait) and (min-height: 737px) {
-  html {
-    background: url(bricks.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}*/
-
 
 html, body {
   height:100%;
-  /*position: absolute;*/
-  /*left: 0;
-  top: 0;
-  width: 100%;*/
-  /*margin: 0;*/
   background-color: rgba(50,50,50, .3);
   font-family: 'Montserrat';
 }
 
 #body-main {
   /*display:none;*/
-  height: 100%;
-  width: 100%;
   color: #fff;
-  z-index: 1;
+  z-index: -1;
 }
 
 #logo-main {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 320px;
   top: 0;
   left: 0;
   max-width: 768px;
@@ -58,32 +39,28 @@ html, body {
 }
 
 #pouring-soon {
-  position:relative;
+  position:absolute;
   font-size: 18px;
   margin: 0;
   text-align: center;
-  top: -90px;
-  /*top: calc((125vw/16) + (125vw * .7) - 25vw);*/
-  /*left: calc((100vw - 150px)/2);*/
+  top: 230px;
+  left: calc((100vw - 150px)/2);
   z-index: 2;
 }
 
 #instructions {
-  position: relative;
+  position: absolute;
   font-size: 14px;
-  /*width: 295px;*/
   text-align: center;
-  top: -70px;
-  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw);*/
-  /*left: calc((100% - 295px)/2);*/
+  top: 275px;
+  left: calc((100% - 295px)/2);
 }
 
 /*Email Subscription*/
 form.wufoo {
-  position: relative;
+  position: absolute;
   color: #231D1E;
-  top: -70px;
-  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 50px);*/
+  top: 305px;
   left: calc((100% - 268px)/2);
   z-index: 2;
 }
@@ -112,25 +89,23 @@ form.wufoo {
 /*Email Subscription End*/
 
 #social-media {
-  position: relative;
+  position: absolute;
   display: block;
-  top: -55px;
-  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 100px);*/
+  top: 355px;
   left: calc((100% - 68px)/2);
   z-index: 10;
 }
 
 hr {
-  position:relative;
+  position:absolute;
   padding: 0;
   margin: 0;
   border-color: #DE890A;
   border-width: .3em;
   border-radius: 3px;
-  width: 22vw;
-  top: -45px;
-  /*top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);*/
-  left: calc((100% - 22vw)/2);
+  width: 22%;
+  top: 400px;
+  left: calc((100% - 22%)/2);
 }
 
 /*.hide {
@@ -138,6 +113,11 @@ hr {
   visibility: hidden;
 }*/
 
+@media (min-width: 320px) {
+  #logo-main {
+    left: calc((100% - 320px)/2);
+  }
+}
 
 
 @media (min-width: 768px) {
@@ -147,25 +127,25 @@ hr {
   }
 
   #pouring-soon {
-    top: -200px;
+    /*top: -200px;*/
   }
 
   #instructions {
-    top: -150px;
+    /*top: -150px;*/
   }
 
   form.wufoo {
-    top: -150px;
+    /*top: -150px;*/
   }
 
   #social-media {
-    top: -125px;
+    /*top: -125px;*/
   }
 
   hr {
     width: 125px;
     border-width: .5em;
-    top: -100px;
+    /*top: -100px;*/
     left: calc((100% - 125px)/2);
   }
 }
