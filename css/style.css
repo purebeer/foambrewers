@@ -33,6 +33,7 @@ body {
   height:100vh;
   position:flex;
   width: 100vw;
+  margin: 0;
   background-color: rgba(50,50,50, .3);
   font-family: 'Montserrat';
 }
@@ -122,6 +123,11 @@ hr {
   width: 22vw;
   top: calc((125vw/16) + (125vw * .7) - 25vw + 8vw + 150px);
   left: calc((100vw - 22vw)/2);
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
 }
 
 
