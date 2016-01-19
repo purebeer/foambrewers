@@ -1,0 +1,151 @@
+html {
+  background: url(bricks.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 800px) {
+  html {
+    background: url(bricks.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+
+html, body {
+  height:100%;
+  background-color: rgba(50,50,50, .3);
+  font-family: 'Montserrat';
+}
+
+#body-main {
+  /*display:none;*/
+  color: #fff;
+  z-index: -1;
+}
+
+#logo-main {
+  position: absolute;
+  width: 320px;
+  top: 0;
+  left: 0;
+  max-width: 768px;
+  z-index: 2;
+}
+
+#pouring-soon {
+  position:absolute;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+  top: 48%;
+  left: calc((100% - 150px)/2);
+  z-index: 2;
+}
+
+#instructions {
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
+  top: 54%;
+  left: calc((100% - 295px)/2);
+}
+
+/*Email Subscription*/
+form.wufoo {
+  position: absolute;
+  color: #231D1E;
+  top:60%;
+  left: calc((100% - 268px)/2);
+  z-index: 2;
+}
+#foli1 {
+  display: inline-block;
+}
+#Field2 {
+  color: #231D1E;
+  width: 199px;
+  background-color: #fff;
+  padding: 6px 14px;
+  border: 1px solid #000;
+  border-radius: 0px;
+}
+#submit-button {
+  display: inline-block;
+  background-color: #fff;
+}
+#saveForm {
+  background-color: #fff;
+  width: 65.5px;
+  padding: 6px 14px;
+  border-radius: 0px;
+  border: 1px solid #000;
+}
+/*Email Subscription End*/
+
+#social-media {
+  position: absolute;
+  display: block;
+  top: 70%;
+  left: calc((100% - 68px)/2);
+  z-index: 10;
+}
+
+hr {
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  border-color: #DE890A;
+  border-width: .3em;
+  border-radius: 3px;
+  width: 22%;
+  top: 80%;
+  left: calc((100% - 22%)/2);
+}
+
+/*.hide {
+  display: none;
+  visibility: hidden;
+}*/
+
+@media (min-width: 320px) {
+  #logo-main {
+    left: calc((100% - 320px)/2);
+  }
+}
+
+
+@media (min-width: 768px) {
+  #logo-main {
+    /*top: -192px;*/
+    left: calc((100% - 768px)/2);
+  }
+
+  #pouring-soon {
+    /*top: -200px;*/
+  }
+
+  #instructions {
+    /*top: -150px;*/
+  }
+
+  form.wufoo {
+    /*top: -150px;*/
+  }
+
+  #social-media {
+    /*top: -125px;*/
+  }
+
+  hr {
+    width: 125px;
+    border-width: .5em;
+    /*top: -100px;*/
+    left: calc((100% - 125px)/2);
+  }
+}
