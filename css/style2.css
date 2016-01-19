@@ -44,7 +44,7 @@ html, body {
   margin: 0;
   text-align: center;
   top: 230px;
-  left: calc((100vw - 150px)/2);
+  left: calc((100% - 150px)/2);
   z-index: 2;
 }
 
