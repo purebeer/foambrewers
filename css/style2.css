@@ -113,6 +113,11 @@ hr {
   visibility: hidden;
 }*/
 
+@media (min-width: 320px) {
+  #logo-main {
+    left: calc((100% - 320px)/2);
+  }
+}
 
 
 @media (min-width: 768px) {
