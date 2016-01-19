@@ -111,11 +111,15 @@ hr {
 
 @media (orientation: portrait) and (max-height: 465px) {
   #pouring-soon {
-    top: 57%;
+    top: 60%;
+    font-size: 13px;
+    left: calc((100% - 109px)/2);
   }
 
   #instructions {
-    top: 65%;
+    top: 66%;
+    font-size: 11px;
+    left: calc((100% - 224px)/2);
   }
 
   form.wufoo {
