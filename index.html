@@ -36,6 +36,18 @@
   <meta name="robots" content="index, follow">
 
   <script src="http://localhost:35729/livereload.js"></script>
+
+  <!-- Google Analytics Tracking Code -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72717504-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 
 <body>
@@ -53,7 +65,7 @@
             <input id="Field2" name="Field2" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="1" placeholder="ENTER EMAIL"/>
         </div>
         <div class="buttons " id="submit-button">
-            <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="JOIN"/>
+            <input id="saveForm" onclick="emailJoinEventGA()" name="saveForm" class="btTxt submit" type="submit" value="JOIN"/>
         </div>
 
         <div class="hide">
@@ -66,11 +78,23 @@
     </form>
 
     <div id="social-media">
-      <a id="facebook-icon" href="https://www.facebook.com/House-of-Fermentology-498323433676425/"><img src="img/icon/facebook.png" alt="Facebook" width="32px"></a>
-      <a id="instagram-icon" href="https://www.instagram.com/foambrewers/"><img src="img/icon/instagram.png" alt="Instagram" width="32px"></a>
+      <a id="facebook-icon" target="_blank" onclick="facebookEventGA()" href="https://www.facebook.com/House-of-Fermentology-498323433676425/"><img src="img/icon/facebook.png" alt="Facebook" width="32px"></a>
+      <a id="instagram-icon" target="_blank" onclick="instagramEventGA()" href="https://www.instagram.com/foambrewers/"><img src="img/icon/instagram.png" alt="Instagram" width="32px"></a>
     </div>
 
     <hr>
+
+    <script>
+    function facebookEventGA() {
+      ga('send', 'event', { eventCategory: 'Temporary Landing Page', eventAction: 'Social Media', eventLabel: 'Facebook'});
+    }
+    function instagramEventGA() {
+      ga('send', 'event', { eventCategory: 'Temporary Landing Page', eventAction: 'Social Media', eventLabel: 'Instagram'});
+    }
+    function emailJoinEventGA() {
+      ga('send', 'event', { eventCategory: 'Temporary Landing Page', eventAction: 'Email Listserv', eventLabel: 'Email Listserv'});
+    }
+    </script>
 
   </div>
 </body>
