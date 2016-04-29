@@ -163,9 +163,13 @@ function init() {
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/icon/FOAM_ICON_FAVICON-compressor.png';
     var myLatLng = new google.maps.LatLng(44.479085, -73.219984);
-    var beachMarker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4790851,-73.2199836,15z/data=!4m2!3m1!1s0x0:0xe1cbdbe52021ef94');
     });
 }
