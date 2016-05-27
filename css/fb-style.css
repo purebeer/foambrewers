@@ -101,3 +101,25 @@ div.other-row p {
   border-radius:0;
   border: 0px solid black;
 }
+
+.events {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/derekEventsBackground.jpg) no-repeat bottom center scroll;
+    /*background-color: #252120;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.event-container {
+  margin:10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
+  font-size:20px;
+  background-color:rgba(0,0,0,.6);
+}
