@@ -23,6 +23,9 @@ h1.page-title span {
 h3.beer-name, h4.beer-name {
   color: rgb(50,50,50);
 }
+h3.beer-name {
+  margin-bottom:15px;
+}
 h4.beer-name {
   font-size:16px;
   margin-bottom:10px;
@@ -37,9 +40,13 @@ p.autobio-text {
 div.beer-row {
   margin: 25px 15px 15px 15px;
   padding:15px 15px 15px 15px;
-  min-height:225px;
+  /*min-height:225px;*/
   color: #868685;
   background-color: #E5DFC5;
+}
+div.beer-row p {
+  font-size:16px;
+  margin-bottom:10px;
 }
 
 div.other-row {
