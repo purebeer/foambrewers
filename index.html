@@ -21,7 +21,8 @@
     <link rel="shortcut icon" type="image/png" href="img/icon/FOAM_ICON_FAVICON-compressor.png"/>
 
 
-
+    <!--Lightgallery-->
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -580,6 +581,25 @@
               </div>
             </div>
         </div>
+
+        <hr>
+        <h3 class="text-center">LightGallery</h3>
+
+        <div id="demo-gallery">
+          <ul id="lightgallery" class="list-unstyled row">
+            <li class="col-xs-6 col-sm-4 col-md-3" data-src="img2/CircaNow.jpg" data-sub-html="<h4>Circa Now</h4>">
+              <a href="">
+                  <img src="img2/CircaNow_thumb.jpg" />
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-3" data-src="img2/honey&lavender.jpg" data-sub-html="<h4>Yellow Dot</h4>">
+              <a href="">
+                  <img src="img2/honey&lavender_thumb.jpg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <a href="#location" class="btn btn-no-circle page-scroll">
             <i class="fa fa-angle-down animated"></i>
         </a>
@@ -728,6 +748,35 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery-3.1.0.min.js"></script> -->
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!--lightGallery-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery();
+        });
+        // $('#lightgallery').lightGallery({
+        //     thumbnail:true
+        // });
+
+    </script>
+
+
+
+    <!--lightgallery-->
+    <script src="js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/lg-autoplay.js"></script>
+    <script src="js/lg-zoom.js"></script>
+    <script src="js/lg-hash.js"></script>
+    <script src="js/lg-pager.js"></script>
+    <script src="lib/jquery.mousewheel.min.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -759,6 +808,7 @@
 
         })();
     </script>
+
 
     <script>
     function facebookEventGA() {
