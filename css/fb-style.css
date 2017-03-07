@@ -127,3 +127,12 @@ div.other-row p {
   font-size:20px;
   background-color:rgba(0,0,0,.6);
 }
+
+/*jf edit 3/7/17*/
+ul.dropdown-menu {
+  /*background-color:#000000;*/
+  background-color:rgba(0,0,0,.9);
+}
+ul.dropdown-menu>li>a {
+  color:#fff;
+}
