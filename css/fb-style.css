@@ -136,3 +136,45 @@ ul.dropdown-menu {
 ul.dropdown-menu>li>a {
   color:#fff;
 }
+
+.calendar-text {
+  font-size: 13px;
+}
+
+.calendar-divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right:5px;
+  margin-left:5px;
+}
+.calendar-date {
+  margin-bottom: 15px;
+}
+.calendar-container {
+  margin-top: 50px;
+  background-color:rgba(0,0,0,.4);
+  padding:5px 5px 0px 5px;
+  border-style: solid;
+  border-color: #808080;
+  border-width: thick;
+}
+ /*Variety of solutions http://stackoverflow.com/questions/21955088/7-equal-columns-in-bootstrap*/
+
+
+ @media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
