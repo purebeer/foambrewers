@@ -14,6 +14,7 @@ function myFunction() {
   var vDisplayR11;
   var vDisplayNYE;
   var vDisplayCal122819;
+  // var vAttentionText;
 
   var month = new Date().getMonth();
   var date = new Date().getDate();
@@ -30,6 +31,8 @@ function myFunction() {
 
     vDisplayNYE = "block";
     vDisplayCal122819 = "block";
+
+
   } else if (month == 11 && date == 27 && time < 19) {
     vDisplayR27 = "block";
     vDisplayR28 = "block";
@@ -41,6 +44,7 @@ function myFunction() {
 
     vDisplayNYE = "block";
     vDisplayCal122819 = "block";
+
   } else if (month == 11 && date == 27 && time >= 19) {
     vDisplayR27 = "none";
     vDisplayR28 = "block";
@@ -52,6 +56,9 @@ function myFunction() {
 
     vDisplayNYE = "block";
     vDisplayCal122819 = "block";
+
+    document.getElementById("attention-text").innerHTML = "*ATTENTION!</br>For Horizon Lines, our New Year's Eve event, we will be open from 12pm to 8pm. After our festivities, we encourage your to check out the rest of the Highlight events around town. We will be closed on New Year's Day to allow our team to spend time with family, and likely recover from the night before...";
+
   } else if (month == 11 && date == 28) {
     vDisplayR27 = "none";
     vDisplayR28 = "block";
@@ -63,6 +70,7 @@ function myFunction() {
 
     vDisplayNYE = "block";
     vDisplayCal122819 = "block";
+    document.getElementById("attention-text").innerHTML = "*ATTENTION!</br>For Horizon Lines, our New Year's Eve event, we will be open from 12pm to 8pm. After our festivities, we encourage your to check out the rest of the Highlight events around town. We will be closed on New Year's Day to allow our team to spend time with family, and likely recover from the night before...";
   } else if (month == 11 && date >= 29) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -74,6 +82,19 @@ function myFunction() {
 
     vDisplayNYE = "block";
     vDisplayCal122819 = "none";
+    document.getElementById("attention-text").innerHTML = "*ATTENTION!</br>For Horizon Lines, our New Year's Eve event, we will be open from 12pm to 8pm. After our festivities, we encourage your to check out the rest of the Highlight events around town. We will be closed on New Year's Day to allow our team to spend time with family, and likely recover from the night before...";
+  } else if (month == 0 && date <= 1) {
+    vDisplayR27 = "none";
+    vDisplayR28 = "none";
+    vDisplayR31 = "none";
+    vDisplayR03 = "block";
+    vDisplayR04 = "block";
+    vDisplayR10 = "block";
+    vDisplayR11 = "block";
+
+    vDisplayNYE = "none";
+    vDisplayCal122819 = "none";
+    document.getElementById("attention-text").innerHTML = "*ATTENTION!</br>For Horizon Lines, our New Year's Eve event, we will be open from 12pm to 8pm. After our festivities, we encourage your to check out the rest of the Highlight events around town. We will be closed on New Year's Day to allow our team to spend time with family, and likely recover from the night before...";
   } else if (month == 0 && date < 4) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -85,6 +106,8 @@ function myFunction() {
 
     vDisplayNYE = "none";
     vDisplayCal122819 = "none";
+
+    document.getElementById("attention-div").style.display= "none";
   } else if (month == 0 && date < 5) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -95,6 +118,7 @@ function myFunction() {
     vDisplayR11 = "block";
     vDisplayNYE = "none";
     vDisplayCal122819 = "none";
+    document.getElementById("attention-div").style.display= "none";
   } else if (month == 0 && date >= 5) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -105,6 +129,7 @@ function myFunction() {
     vDisplayR11 = "block";
     vDisplayNYE = "none";
     vDisplayCal122819 = "none";
+    document.getElementById("attention-div").style.display= "none";
   } else {
     vDisplayR27 = "inline";
     vDisplayR28 = "inline";
@@ -115,6 +140,7 @@ function myFunction() {
     vDisplayR11 = "inline";
     vDisplayNYE = "inline";
     vDisplayCal122819 = "inline";
+    document.getElementById("attention-div").style.display= "none";
   }
   document.getElementById("release-27").style.display= vDisplayR27;
   document.getElementById("release-28").style.display= vDisplayR28;
@@ -130,6 +156,8 @@ function myFunction() {
   document.getElementById("halloween-separator").style.display= vDisplayNYE;
 
   document.getElementById("calendar-row-12-28-19").style.display= vDisplayCal122819;
+
+  // document.getElementById("attention-text").innerHTML = "*ATTENTION!</br>For Horizon Lines, our New Year's Eve event, we will be open from 12pm to 8pm. After our festivities, we encourage your to check out the rest of the Highlight events around town. We will be closed on New Year's Day to allow our team to spend time with family, and likely recover from the night before...";
 }
 
 //EXAMPLE SAVE
