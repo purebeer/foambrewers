@@ -12,6 +12,7 @@ function myFunction() {
   var vDisplayR04;
   var vDisplayR10;
   var vDisplayR11;
+  var vDisplayNYE;
 
   var month = new Date().getMonth();
   var date = new Date().getDate();
@@ -25,6 +26,8 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "none";
     vDisplayR11 = "none";
+
+    vDisplayNYE = "block";
   } else if (month == 11 && date == 27 && time < 19) {
     vDisplayR27 = "block";
     vDisplayR28 = "block";
@@ -33,6 +36,8 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "none";
     vDisplayR11 = "none";
+
+    vDisplayNYE = "block";
   } else if (month == 11 && date == 27 && time >= 19) {
     vDisplayR27 = "none";
     vDisplayR28 = "block";
@@ -41,6 +46,8 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "none";
     vDisplayR11 = "none";
+
+    vDisplayNYE = "block";
   } else if (month == 11 && date == 28) {
     vDisplayR27 = "none";
     vDisplayR28 = "block";
@@ -49,6 +56,8 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "none";
     vDisplayR11 = "none";
+
+    vDisplayNYE = "block";
   } else if (month == 11 && date >= 29) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -57,6 +66,8 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "none";
     vDisplayR11 = "none";
+
+    vDisplayNYE = "block";
   } else if (month == 0 && date < 4) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -65,6 +76,8 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "block";
     vDisplayR11 = "block";
+
+    vDisplayNYE = "none";
   } else if (month == 0 && date < 5) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -73,6 +86,7 @@ function myFunction() {
     vDisplayR04 = "block";
     vDisplayR10 = "block";
     vDisplayR11 = "block";
+    vDisplayNYE = "none";
   } else if (month == 0 && date >= 5) {
     vDisplayR27 = "none";
     vDisplayR28 = "none";
@@ -81,6 +95,7 @@ function myFunction() {
     vDisplayR04 = "none";
     vDisplayR10 = "block";
     vDisplayR11 = "block";
+    vDisplayNYE = "none";
   } else {
     vDisplayR27 = "inline";
     vDisplayR28 = "inline";
@@ -89,6 +104,7 @@ function myFunction() {
     vDisplayR04 = "inline";
     vDisplayR10 = "inline";
     vDisplayR11 = "inline";
+    vDisplayNYE = "inline";
   }
   document.getElementById("release-27").style.display= vDisplayR27;
   document.getElementById("release-28").style.display= vDisplayR28;
@@ -97,6 +113,11 @@ function myFunction() {
   document.getElementById("release-04").style.display= vDisplayR04;
   document.getElementById("release-10").style.display= vDisplayR10;
   document.getElementById("release-11").style.display= vDisplayR11;
+
+  document.getElementById("halloween").style.display= vDisplayNYE;
+  document.getElementById("halloween-section").style.display= vDisplayNYE;
+  document.getElementById("halloween-button").style.display= vDisplayNYE;
+  document.getElementById("halloween-separator").style.display= vDisplayNYE;
 }
 
 //EXAMPLE SAVE
