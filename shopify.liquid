@@ -1,0 +1,24 @@
+{% for line in checkout.line_items %}
+  <!-- DEBUG looking at {{ line.title }} -->
+  {% if line.title contains 'Cans' or line.title contains 'Growler' %}
+    <p></br><span style="font-size:28px;font-weight:bold">YOU BOUGHT CANS AND/OR GROWLERS!</span></br></br><b>CHECK THE FOLLOWING LIST TO ENSURE THAT WE CAN PROCESS YOUR ORDER CORRECTLY!</b> You can find all the details/requirements for ordering at the top of our <a href="https://shop.foambrewers.com/collections/delivery-and-curbside-pick-up" target="_blank">Delivery and Curbside Pick-Up</a> page. If anything doesn't check out, please email us at <a href="mailto:info@foambrewers.com" target="_blank">info@foambrewers.com</a> with your concern.</br></br>1. Did you select the appropriate delivery or pick-up method? If delivery, you are located in one of the listed Delivery Zones and are aware of your delivery date.</br>2. You provided an appropriate phone number and email address so that we can contact you if necessary?</br>3. You only purchased items/beer from our Delivery & Curbside Pick-Up page? If your cart contained merchandise as well as beer, shipping/delivery is miscalculated and we may not have the merchandise at this location. We will need to refund your order and start over.</br>4. You are at least 21 years of age and will provide valid ID upon pick-up/delivery</br></br><h2>DELIVERY?!?</h2></br><b>If all of the above checks out, we will be in contact with you soon regarding your delivery. Please make sure you are home during the specified delivery time and have your phone on you. When we arrive, we will call you. If you do not pick up your phone and/or come to the door within 5 minutes, we will move on to our next delivery.</b></p>
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+
+ {% if checkout.shipping_method.title == 'Pick-Up (Burlington)' %}
+        <p></br><h2>PICK-UP</h2></br>Okay, we're ready for you to collect your beer from our brewery at 112 Lake Street, Burlington. We are open 11:30am to 7:30pm every day.</br></br>If you just placed your order, and it contains growlers, please allow 20 minutes for us to fill them.</br></br>You must pick up orders within 48 hours of placing them.</p>
+ {% endif %}
+
+
+ {% if checkout.shipping_method.title == 'Pick-Up (Hinesburg-The Annex)' %}
+        <p></br><h2>PICK-UP</h2></br>Okay, we're ready for you to collect your beer from our brewery at 10516 Route 116, Hinesburg, Vermont. We are open 2:00pm to 6:00pm on Monday through Saturday.</br></br>Remember that no growlers at The Annex. If you ordered growlers, we will refund them and have your cans ready for pickup.</br></br>You must pick up orders within 48 hours of placing them.</p>
+ {% endif %}
+
+
+<script>
+ {% if checkout.shipping_method.title == 'Free Delivery - Burlington & Winooski ($30 minimum)' %}
+         <p></br><h2>DELIVERY?!?</h2></br><b>If all of the above checks out, we will be in contact with you soon regarding your delivery. Please make sure you are home during the specified delivery time and have your phone on you. When we arrive, we will call you. If you do not pick up your phone and/or come to the door within 5 minutes, we will move on to our next delivery.</b></p>
+ {% endif %}
+</script>

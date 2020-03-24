@@ -6,6 +6,16 @@
   {% endif %}
 {% endfor %}
 
+<script>
+  // DEBUG {{ checkout.shipping_method.title }} has been used
+  {% if checkout.shipping_method.title == 'Free Delivery - Burlington & Winooski ($30 minimum)' %}
+    Shopify.Checkout.OrderStatus.addContentBox(
+      `<p>Okay, we're ready for you to collect your beer from our brewery at 112 Lake Street, Burlington, Vermont. We are open 11:30am to 7:30pm every day.</br></br>If you just placed your order, and it contains growlers, please allow 20 minutes for us to fill them.</br></br>You must pick up orders within 48 hours of placing them.</p>`
+    )
+  {% endif %}
+</script>
+
+
   <script>
     // DEBUG {{ checkout.shipping_method.title }} has been used
     {% if checkout.shipping_method.title == 'Pick-Up (Burlington)' %}
