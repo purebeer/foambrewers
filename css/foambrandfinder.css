@@ -1,0 +1,26 @@
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif; /* Arial is used as an example, you can choose any font */
+}
+
+/* Style for label elements with the class 'control-label' */
+.control-label {
+    font-weight: bold;      /* Makes the font bold */
+    color: #333333;         /* Sets the color, here it's a shade of gray */
+    font-size: 16px;        /* Sets the font size */
+}
+
+/* Style for button elements */
+button {
+    background-color: #4CAF50;  /* Sets the background color, example here is a shade of green */
+    color: white;               /* Sets the text color to white */
+    padding: 10px 20px;         /* Adds padding inside the button */
+    border: none;               /* Removes the border */
+    border-radius: 4px;         /* Rounds the corners of the button */
+    cursor: pointer;            /* Changes the cursor to a pointer when hovering over the button */
+}
+
+/* Additional style for the button when hovered over */
+button:hover {
+    background-color: #45a049;  /* Slightly darker shade of green for hover effect */
+}
