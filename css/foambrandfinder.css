@@ -21,7 +21,7 @@ body {
 }
 
 .nav-tabs>li.active>a {
-    font-family: 'Poppins';
+    font-family: 'Montserrat','Poppins', Arial, sans-serif;
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;
