@@ -1,14 +1,16 @@
 /* Style for the body element */
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* Arial is used as an example, you can choose any font */
-    color: #FFFFFF;
+    font-family: 'Montserrat','Poppins', Arial, sans-serif; /* Arial is used as an example, you can choose any font */
+    /* color: #FFFFFF; */
 }
 
 /* Style for label elements with the class 'control-label' */
 .control-label {
-    font-weight: bold;      /* Makes the font bold */
-    color: #333333;         /* Sets the color, here it's a shade of gray */
-    font-size: 16px;        /* Sets the font size */
+    font-weight: 500;      /* Makes the font bold */
+    color: black;         /* Sets the color, here it's a shade of gray */
+    font-size: 12px;        /* Sets the font size */
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 /* Style for button elements */
