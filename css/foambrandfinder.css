@@ -14,13 +14,19 @@ body {
 }
 
 /* Style for button elements */
-button {
-    background-color: #4CAF50;  /* Sets the background color, example here is a shade of green */
-    color: white;               /* Sets the text color to white */
+
+
+.btn-primary {
+    background-color: black;  /* Sets the background color, example here is a shade of green */
+    color: white;        /* Sets the text color to white */
+    font-size: 16px; 
+    font-weight: 400;  
+    text-transform: uppercase;    
+    line-height: 28px;
     padding: 10px 20px;         /* Adds padding inside the button */
     border: none;               /* Removes the border */
     border-radius: 4px;         /* Rounds the corners of the button */
-    cursor: pointer;            /* Changes the cursor to a pointer when hovering over the button */
+    /* cursor: pointer;            Changes the cursor to a pointer when hovering over the button */
 }
 
 /* Additional style for the button when hovered over */
