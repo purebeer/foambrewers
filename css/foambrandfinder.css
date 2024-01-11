@@ -20,6 +20,16 @@ body {
     text-transform: uppercase;
 }
 
+.nav-tabs>li.active>a {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    border: none;
+    box-shadow: inset 0 -2px 0 #2196f3;
+    color: black;
+}
+
 /* Style for button elements */
 
 
