@@ -13,6 +13,13 @@ body {
     text-transform: uppercase;
 }
 
+.form-control {
+    font-weight: 400;      /* Makes the font bold */
+    font-size: 12px;        /* Sets the font size */
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 /* Style for button elements */
 
 
